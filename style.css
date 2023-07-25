@@ -1,10 +1,24 @@
 body {
     background-color: lightpink;
     color: #2E0E51;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 /* escrevemos "." para chamar uma class*/
-
 /* esse .link text-decoration é pra tirar as underline dos icones de cima que aparece por ele ser um link: */
+
+*{
+    box-sizing: border-box;
+}
+/* o * aplica para todos */
+
+.main {
+    padding: 66px 230px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* min height faz com que a tela ocupe o espaço inteiro (no caso de 100). VH= viewport height */
+}
 .link{
     text-decoration: none;
 }
@@ -19,6 +33,26 @@ body {
 .profile-picture {
     width: 400px;
     height: 400px;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 48px;
+    color:#2E0E51;
+    margin: 0;
+
+}
+
+.subtitle{
+    font-weight: 500;
+    color: purple;
+    font-size: 24px;
+    margin: 0;
+
+}
+
+.text {
+    max-width: 511px;
 }
 
 .button {
@@ -40,9 +74,11 @@ body {
     /* gap é o espaço entre a frase do botao e o icone */
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
     /* rbga: red, green, blue, e o A é transparencia, os numeros significam cada um na ordem */
-
+    font-family: inherit;
+    /* inherit significa que ele herda a fonte do body */
 }
-    .lista {
+
+.lista {
         list-style: none;
         display: flex;
         flex-direction: row;
@@ -51,19 +87,17 @@ body {
         justify-content: flex-end;
     }
 
-    .container {
+.container {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 54px;
         flex-direction: row;
-    
-    }
+        flex-grow: 1;
+        }
 
-    .descriptionWrapper {
+.descriptionWrapper {
        
     }
 
-    .text {
-        max-width: 511 px;
-    }
+    
