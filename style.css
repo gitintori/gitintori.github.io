@@ -1,0 +1,45 @@
+body {
+    background-color: lightpink;
+    color: #2E0E51;
+}
+/* escrevemos "." para chamar uma class*/
+
+/* esse .link text-decoration é pra tirar as underline dos icones de cima que aparece por ele ser um link: */
+.link{
+    text-decoration: none;
+}
+
+.icon{
+    width: 32px;
+    height: auto;
+
+}
+/* a largura ta auto pra ela ajustar automatico */
+
+.profile-picture {
+    width: 400px;
+    height: 400px;
+}
+
+.button {
+    background-color: #2E0E51;
+    color: white;
+    cursor: pointer;
+    /* pra tirar a borda preta em volta do botão: */
+    border: none;
+    font-size: 24px;
+    /* padding: espaço entre a letra e o butao, sendo na ordem: de cima, direita, pra baixo, esquerda (escrever sem virgula): */
+    padding: 16px 12px;
+    /* como ia repetir mais um 16 e mais um 12, ele volta pro 16 e pro 12 de novo entao nao precisa escrever. */
+    /* border-radius: a ponta fica redondinha */
+    border-radius: 4px;
+    display: flex;
+    /* display flex permite algumas outras coisas, como o gap abaixo */
+    align-items: center;
+    gap: 16px;
+    /* gap é o espaço entre a frase do botao e o icone */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    /* rbga: red, green, blue, e o A é transparencia, os numeros significam cada um na ordem */
+
+
+}
