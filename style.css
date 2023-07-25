@@ -41,5 +41,29 @@ body {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
     /* rbga: red, green, blue, e o A é transparencia, os numeros significam cada um na ordem */
 
-
 }
+    .lista {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 36px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 54px;
+        flex-direction: row;
+    
+    }
+
+    .descriptionWrapper {
+       
+    }
+
+    .text {
+        max-width: 511 px;
+    }
