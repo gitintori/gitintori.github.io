@@ -5,7 +5,6 @@ body {
     margin: 0;
 }
 /* escrevemos "." para chamar uma class*/
-/* esse .link text-decoration é pra tirar as underline dos icones de cima que aparece por ele ser um link: */
 
 *{
     box-sizing: border-box;
@@ -22,6 +21,7 @@ body {
 .link{
     text-decoration: none;
 }
+/* esse .link text-decoration é pra tirar as underline dos icones de cima que aparece por ele ser um link: */
 
 .icon{
     width: 32px;
@@ -81,7 +81,6 @@ body {
 .lista {
         list-style: none;
         display: flex;
-        flex-direction: row;
         gap: 36px;
         align-items: center;
         justify-content: flex-end;
@@ -92,9 +91,14 @@ body {
         justify-content: center;
         align-items: center;
         gap: 54px;
-        flex-direction: row;
         flex-grow: 1;
         }
+/* Para deixar responsivo no celular:          (o 720 é um valor chutado que ele quebra) */
+    @media (max-width: 720px) {
+        .container{
+            flex-direction: column-reverse;
+        }
+    }
 
 .descriptionWrapper {
        
